@@ -1,4 +1,4 @@
-#Especificação do banco de dados
+# Especificação do banco de dados
 
 Definição de tabelas
 
