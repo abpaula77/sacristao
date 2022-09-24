@@ -7,8 +7,6 @@ O sistema deve permitir o gerenciamento da equipe em relação a funções e tar
 Deve permitir agendar missa, escalar pessoal, enviar comunidacados e avisos.
 
 **Tecnologias aplicadas**
-
 Banco de dados : PostgreSQL
 BackEnd: Lazarus / Horse
 FrontEnd: React
-
