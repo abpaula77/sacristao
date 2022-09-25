@@ -11,7 +11,7 @@ Os nomes das tabelas devem estar no **plural**.
 
 Ex:
 
-- **Bom**: `usuarios`, `,missas`, `locais`, `funcoes`
+- **Bom**: `usuarios`, `missas`, `locais`, `funcoes`
 - **Ruim**: `usuario`, `missa`, `local`, `funcao`
 
 ## Colunas
@@ -33,9 +33,9 @@ Por exemplo, caso a tabela `usuarios` tenha um relacionameto com a tabela `funco
 
 A primary key de toda tabela deve ser uma coluna de inteiros com incremento automático (`SERIAL`), chamada `id`.
 
-## Timestamps
+<!-- ## Timestamps
 
-Toda tabela deve definir duas colunas para colocar os timestamps: `created_at` e `updated_at`. A coluna `created_at` recebe automaticamente o timestamp do momento que o registro for criado. A coluna `updated_at` recebe automaticamente o timestamp do momento que o registro for alterado.
+Toda tabela deve definir duas colunas para colocar os timestamps: `created_at` e `updated_at`. A coluna `created_at` recebe automaticamente o timestamp do momento que o registro for criado. A coluna `updated_at` recebe automaticamente o timestamp do momento que o registro for alterado. -->
 
 ## Especificação do banco de dados
 
