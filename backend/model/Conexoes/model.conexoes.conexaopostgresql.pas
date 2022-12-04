@@ -28,6 +28,7 @@ type
      public
        constructor Create;
        destructor Destroy;
+       function Conexao: TPQConnection;
        class function getInstance: TModelConexaoPostgreSQL;
 
    end;
@@ -38,11 +39,10 @@ implementation
 
 procedure TModelConexaoPostgreSQL.LerParametros;
 begin
-  FConexao.Params.Database := 'piauniao'; //FDatabase;
-  FConexao.Params.UserName := 'piauniao'; //FUserName;
-  FConexao.Params.Password := 'PostSacrist@0';
-  FConexao.Params.Add('Server=' + 'pgsql.piauniao.com.br'); //FServer);
-  FConexao.Params.Add('Port=' + IntToStr(5432));
+  FConexao.DatabaseName := 'piauniao'; //FDatabase;
+  FConexao.UserName := 'piauniao'; //FUserName;
+  FConexao.Password := 'PostSacrist@0';
+  FConexao.HostName:='pgsql.piauniao.com.br';
 end;
 
 constructor TModelConexaoPostgreSQL.Create;
@@ -57,6 +57,11 @@ destructor TModelConexaoPostgreSQL.Destroy;
 begin
   FreeAndNil(FConexao);
   FDBInstance.Free;
+end;
+
+function TModelConexaoPostgreSQL.Conexao: TPQConnection;
+begin
+  result := FConexao;
 end;
 
 class function TModelConexaoPostgreSQL.getInstance: TModelConexaoPostgreSQL;
