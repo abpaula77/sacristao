@@ -45,6 +45,44 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Model.Conexoes.ConexaoPostgreSQL"/>
       </Unit>
+      <Unit>
+        <Filename Value="model\Entity\model.entity.interfaces.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Model.Entity.Interfaces"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\Entity\cadastros\model.entity.locais.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Model.Entity.Locais"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dao\dao.entity.interfaces.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Dao.Entity.Interfaces"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dao\cadastros\dao.locais.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Dao.Locais"/>
+      </Unit>
+      <Unit>
+        <Filename Value="controller\Entity\controller.entity.interfaces.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Controller.Entity.Interfaces"/>
+      </Unit>
+      <Unit>
+        <Filename Value="controller\Entity\cadastros\controller.entity.locais.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Controller.Entity.Locais"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\pages\view.pages.principal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="View.Pages.Principal"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -55,10 +93,13 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="model\Conexoes"/>
+      <OtherUnitFiles Value="model\Conexoes;model;model\Entity;model\Entity\cadastros;dao;dao\cadastros;controller\Entity;controller\Entity\cadastros;view\pages;..\..\Bancos\PostgreSql\13\bin"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2"/>
+      </Debugging>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>

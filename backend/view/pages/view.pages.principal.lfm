@@ -1,0 +1,235 @@
+object Form1: TForm1
+  Left = 256
+  Height = 682
+  Top = 145
+  Width = 1040
+  Caption = 'Form1'
+  ClientHeight = 682
+  ClientWidth = 1040
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '2.2.2.0'
+  object pnlTop: TPanel
+    Left = 0
+    Height = 88
+    Top = 0
+    Width = 1040
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 88
+    ClientWidth = 1040
+    TabOrder = 0
+    object btnTestDB: TButton
+      Left = 8
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Teste DB'
+      OnClick = btnTestDBClick
+      TabOrder = 0
+    end
+    object Button5: TButton
+      Left = 88
+      Height = 25
+      Top = 8
+      Width = 75
+      Action = acInsert
+      TabOrder = 1
+    end
+    object Button6: TButton
+      Left = 952
+      Height = 25
+      Top = 8
+      Width = 75
+      Action = acClose
+      TabOrder = 2
+    end
+    object edtPesquisa: TEdit
+      Left = 16
+      Height = 23
+      Top = 48
+      Width = 316
+      TabOrder = 3
+    end
+  end
+  object PCBase: TPageControl
+    Left = 0
+    Height = 571
+    Top = 88
+    Width = 1040
+    ActivePage = TSCadastro
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 1
+    object TSLista: TTabSheet
+      Caption = 'Lista'
+      ClientHeight = 543
+      ClientWidth = 1032
+      object DBGLista: TDBGrid
+        Left = 0
+        Height = 543
+        Top = 0
+        Width = 1032
+        Align = alClient
+        Color = clWindow
+        Columns = <>
+        DataSource = dtsLista
+        TabOrder = 0
+      end
+    end
+    object TSCadastro: TTabSheet
+      Caption = 'Cadastro'
+      ClientHeight = 543
+      ClientWidth = 1032
+      object SpeedButton1: TSpeedButton
+        Left = 8
+        Height = 50
+        Top = 8
+        Width = 50
+        Action = acCancel
+        Flat = True
+        Images = ImageList1
+        ImageIndex = 0
+        OnClick = SpeedButton1Click
+        ShowCaption = False
+      end
+      object SpeedButton2: TSpeedButton
+        Left = 64
+        Height = 50
+        Top = 8
+        Width = 50
+        Action = acSave
+        Flat = True
+        Images = ImageList1
+        ImageIndex = 1
+        ShowCaption = False
+      end
+    end
+  end
+  object sbBase: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 659
+    Width = 1040
+    Panels = <>
+  end
+  object Button2: TButton
+    Left = 168
+    Height = 25
+    Top = 8
+    Width = 75
+    Action = acUpdate
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 248
+    Height = 25
+    Top = 8
+    Width = 75
+    Action = acView
+    TabOrder = 4
+  end
+  object Button4: TButton
+    Left = 336
+    Height = 25
+    Top = 8
+    Width = 75
+    Action = acDelete
+    TabOrder = 5
+  end
+  object Button7: TButton
+    Left = 336
+    Height = 25
+    Top = 48
+    Width = 75
+    Action = acSearch
+    TabOrder = 6
+  end
+  object dtsLista: TDataSource
+    Left = 8
+    Top = 56
+  end
+  object aclMenu: TActionList
+    OnUpdate = aclMenuUpdate
+    Left = 16
+    Top = 16
+    object acInsert: TAction
+      Caption = 'Inserir'
+      OnExecute = acInsertExecute
+    end
+    object acUpdate: TAction
+      Caption = 'Atualizar'
+      OnExecute = acUpdateExecute
+    end
+    object acView: TAction
+      Caption = 'Visualizar'
+      OnExecute = acViewExecute
+    end
+    object acDelete: TAction
+      Caption = 'Exclui'
+      OnExecute = acDeleteExecute
+    end
+    object acSearch: TAction
+      Caption = 'Pesquisar'
+    end
+    object acClose: TAction
+      Caption = 'Fechar'
+      OnExecute = acCloseExecute
+    end
+    object acSave: TAction
+      Caption = 'Salvar'
+      OnExecute = acSaveExecute
+    end
+    object acCancel: TAction
+      Caption = 'Cancelar'
+      OnExecute = acCancelExecute
+    end
+  end
+  object ImageList1: TImageList
+    Left = 976
+    Top = 32
+    Bitmap = {
+      4C7A020000001000000010000000F80400000000000078DAA5546B4C936714FE
+      2E857EFD7AB195D286965A2E95967213E885B660416E15A55907E522028A02EA
+      16A621BA25663FCC92258B982CEAE636A73173D1019B08628A28B4B6949B17A6
+      137043E382C9DC62E26A96B1601C67EF4764C2C40DB337397FDE739EF33CE7F9
+      CEFB61D8C2C3E5DAD353523E3E9E9BEBBB9D9DED7D9893E3BD6F367FE5924836
+      6D250821077BC9218810915EDF72A6ACEC3AE4E50D4266663FAC5EDD0FE9E97E
+      B058FC60B30D4146C6A57B346DB42E821566659DBD6EB75F81356B06C064F282
+      56DB351D1DDD3A191373EE7162620FE8F57DB361347AA628CA609B8F4F4D6D69
+      2E2C1C86ACAC7EC4E187D0D0DDA7709CA741A9E54C5094D92E977F3A9294E483
+      E4643F4445B53F2249E98A67F3A63A9D57677919ACD9EC079DCE1DE0F18C96F9
+      1CA81F2F32F288C7681C8484843E1089DEFC84B98E8FDF77989997D12C91BCDD
+      CA6075BA3E484A720790CE053D828222953A9D675AA1E803A9F49B47E84A60B5
+      7AAE315EC5C55D784A10A20486372CAC2B40D3DDC0E5BA0241410B7BA8D5473B
+      65B241C4DF05C1C1B1A6EC6CDF4F8CCF2B57B6FD8CD262A68624F5169AEE0AF0
+      F96E54D713080E7E3E8B5CBEBB49ABFD16C4623750544A51569667DC60F0213D
+      ED5318C692CCD591A4D12214BA0362F100CAF9D12CA6D91ED1D14D27E2E24621
+      2CCC076C76BC2D25E5F0D73CDE79D4AB0385C5B1705EB3452A1D082814372022
+      6204E929C8349B2F3F50AB27203CDCFD04C769D5F2E51B2BE4F28B40929D48EB
+      915B38CEE5CDEF4151E996C8C89BBFABD5779047779E5AAD7791FF93C8EBFD3E
+      C63F82100469B51D132C16A3C1050AC5473D2C96523EBF079F5FB83E3EFEDE8C
+      4EF710D2D27E45BB353643510965CCF763F21C8EC12293B9A6D8EC2E346B2FFA
+      76BD532A55539B58BCEB3DA5F29D2326936792E13599026030FC0221216F1C47
+      B065F339D86CBD8DC76B79C4E1748340E0413A062131F1068A31D0682690E6FB
+      88777CE61956B2D81B62B1E4517C7EE309A1F0CC6F225137DAE3CBC8673FEAE5
+      FD532A3D38CCE1E8ABFFC9BBD853C47176089B9D984D51BA0D14955C4492E278
+      742F6472D8FF39A998CCFCB9C19FD766FD23E25DE5319CC6A957827FB6CAE5EC
+      B0414E8B018ACFD98063A0AB978AE596734BEB7AAA20FF8C056C6DE950EA2A04
+      5AC7AD590A1617E182E20B8E078EF37950D8990D455D05603D9671170FC6572C
+      051FF37ECCA1EDDECD50D4BD0E4A2ED9A1A2B7F40947433B96E2273B9FAD6FE8
+      DF3153EE7E1D367A4B61FB602D44D54633FF0EEE6C811023B164CC82C561512F
+      EA26C8BC53B957CBBC45E0F0DA61E3E006C83B99FF3DD21D3157A33DA4395FD1
+      F91AAC6DCB9C59562F689AAF296C97AC61DB502D38FAEC507EA51CB60C6F7DC2
+      D5F016E8B6B7E7434EB31ED6B4E860756B0A88F7869CC67838C55205C96AFC9B
+      1F3B078AA172A40A768E3782AA5EFD5CF71CFF41B52FBFD50CAA6362D09C9443
+      66BB01623E5C79D174D4DC5177AD16AA4736C15B3F34C2FA66C718114C285F30
+      488089E51F48FA93BE8C8284D39190763611EC3D6B61DB957AA8BC5E093B6E37
+      C0CED13DD3743477DD4BFD166042E581F07EEB59036474EAA1A037174A874AA0
+      F6D636D8FBE33E506FD11E4455F4BFEE081F17C41ED0B80A2FE583DDBB1E7157
+      C1AE893DE0682919C559B862297B42F0083AE9D02A57F57015D4DCDC0A0DDF35
+      4E7355FC75AFF2EE483E49EBF7A77DB1E56ADDD398EAD8FDFFA5DBE9742E1624
+      8A5014FC97E4FF8EBF0092DDF9FB
+    }
+  end
+end
