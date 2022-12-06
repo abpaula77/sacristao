@@ -93,7 +93,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="model\Conexoes;model;model\Entity;model\Entity\cadastros;dao;dao\cadastros;controller\Entity;controller\Entity\cadastros;view\pages;..\..\Bancos\PostgreSql\13\bin"/>
+      <OtherUnitFiles Value="model\Conexoes;model;model\Entity;model\Entity\cadastros;dao;dao\cadastros;controller\Entity;controller\Entity\cadastros;view\pages;..\..\Bancos\PostgreSql\13\bin;lib\json"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

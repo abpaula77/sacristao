@@ -5,7 +5,7 @@ unit Model.Conexoes.ConexaoPostgreSQL;
 interface
 
 uses
-  Classes, SysUtils, PQConnection, SQLDB;
+  Classes, SysUtils, PQConnection, SQLDB, JsonTools, Forms;
 
 type
 
@@ -25,6 +25,7 @@ type
        FServer: String;
        FPorta: Integer;
        procedure LerParametros;
+       procedure CarregarParametros;
      public
        constructor Create;
        destructor Destroy;
@@ -39,10 +40,34 @@ implementation
 
 procedure TModelConexaoPostgreSQL.LerParametros;
 begin
-  FConexao.DatabaseName := 'piauniao'; //FDatabase;
-  FConexao.UserName := 'piauniao'; //FUserName;
-  FConexao.Password := 'PostSacrist@0';
-  FConexao.HostName:='pgsql.piauniao.com.br';
+  FConexao.DatabaseName := FDatabase;
+  FConexao.UserName := FUserName;
+  FConexao.Password := FPassword;
+  FConexao.HostName:=FServer;
+end;
+
+procedure TModelConexaoPostgreSQL.CarregarParametros;
+var Caminho: string;
+    ArquivoJson: TJsonNode;
+    posicao : integer;
+begin
+   Caminho := IncludeTrailingPathDelimiter(ExtractFileDir(Application.ExeName)) + 'sacristao.json';
+   if FileExists(Caminho) then
+      Begin
+        ArquivoJson := TJsonNode.Create;
+        ArquivoJson.LoadFromFile(Caminho);
+        FDatabase:=ArquivoJson.Find('piauniao/database').AsString;
+        FUserName:=ArquivoJson.Find('piauniao/username').AsString;
+        FPassword:=ArquivoJson.Find('piauniao/password').AsString;
+        FServer:=ArquivoJson.Find('piauniao/hostname').AsString;
+      end
+   else
+      Begin
+        FDatabase:='';
+        FUserName:='';
+        FPassword:='';
+        FServer:='';
+      end;
 end;
 
 constructor TModelConexaoPostgreSQL.Create;
@@ -50,6 +75,7 @@ begin
   FTransacao := TSQLTransaction.Create(nil);
   FConexao := TPQConnection.Create(nil);
   FConexao.Transaction := FTransacao;
+  CarregarParametros;
   LerParametros;
 end;
 

@@ -11,7 +11,8 @@ uses
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, Model.Entity.Interfaces, dao.entity.interfaces, Dao.Locais,
-  Controller.Entity.Interfaces, Controller.Entity.Locais, View.Pages.Principal;
+  Controller.Entity.Interfaces, Controller.Entity.Locais, View.Pages.Principal,
+  JsonNode in 'lib\json\jsontools.pas';
 
 {$R *.res}
 
