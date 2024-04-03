@@ -55,6 +55,7 @@ begin
            end;
       end;
    finally
+     lQry.Close;
      FreeAndNil(lQry);
    end;
 
@@ -119,7 +120,7 @@ begin
 
    lQry := TSQLQuery.Create(nil);
    try
-      lQry.SQLConnection := TModelConexaoPostgreSQL.getInstance.Conexao;
+      lQry.SQLConnection := FQry.SQLConnection;
       lQry.SQL.Clear;
       lQry.SQL.Add('SELECT * FROM public.locais ');
       lQry.SQL.Add('WHERE Id = :Id');
@@ -144,17 +145,19 @@ begin
    Result := True;
    lQry := TSQLQuery.Create(nil);
    try
-      lQry.SQLConnection := TModelConexaoPostgreSQL.getInstance.Conexao;
+      lQry.SQLConnection := FQry.SQLConnection;
       lQry.SQL.Clear;
       lQry.SQL.Add('DELETE FROM public.locais ');
       lQry.SQL.Add('WHERE Id = :Id');
       lQry.ParamByName('Id').AsInteger := aId;
       try
          lQry.ExecSQL;
+         lQry.SQLTransaction.Commit;
       except
          Result := False;
       end;
    finally
+     lQry.Close;
      FreeAndNil(lQry);
    end;
 end;
@@ -171,15 +174,16 @@ begin
    Result := True;
    lQry := TSQLQuery.Create(nil);
    try
-      lQry.SQLConnection := TModelConexaoPostgreSQL.getInstance.Conexao;
+      lQry.SQLConnection := FQry.SQLConnection;
       lQry.SQL.Clear;
       lExist:= Exist(aModel.Id);
       if not lExist then
          Begin
-            lQry.SQL.Add('INSERT INTO public.locais');
+            lQry.SQL.Add('INSERT INTO piauniao.public.locais');
             lQry.SQL.Add('(descricao,endereco)');
             lQry.SQL.Add('VALUES');
             lQry.SQL.Add('(:descricao,:endereco)');
+            lQry.SQL.Add('RETURNING id');
          end
       else
          Begin
@@ -193,11 +197,19 @@ begin
       lQry.ParamByName('descricao').AsString := aModel.Descricao;
       lQry.ParamByName('endereco').AsString := aModel.Endereco;
       try
-         lQry.ExecSQL;
+         if not lExist then
+            Begin
+               lQry.Open;
+               aModel.Id(lQry.FieldByName('id').AsInteger);
+            end
+         else
+            lQry.ExecSQL;
+         lQry.SQLTransaction.Commit;
       except
          Result := False;
       end;
    finally
+     lQry.Close;
      FreeAndNil(lQry);
    end;
 

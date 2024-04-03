@@ -25,6 +25,7 @@ type
     function Locais: iLocaisController;
     function Delete: Boolean;
     function Save: Boolean;
+    function Id: integer;
   end;
 
 implementation
@@ -64,13 +65,35 @@ end;
 
 function TLocaisController.Delete: Boolean;
 begin
+  if FDataSource <> nil then
+     Begin
+       if FDataSource.Dataset.FindField('id') <> nil then
+          FModel.Id(FDataSource.Dataset.FieldByName('id').AsInteger)
+       else
+          FModel.Id(0);
+     end;
   Result := FDao.Delete(FModel.Id);
 end;
 
 function TLocaisController.Save: Boolean;
 begin
+  if FDataSource <> nil then
+     Begin
+       FModel.Descricao(FDataSource.DataSet.FieldByName('descricao').AsString);
+       FModel.Endereco(FDataSource.Dataset.FieldByName('endereco').AsString);
+       if FDataSource.Dataset.FindField('id') <> nil then
+          FModel.Id(FDataSource.Dataset.FieldByName('id').AsInteger)
+       else
+          FModel.Id(0);
+     end;
   Result := FDao.Save(FModel);
 end;
+
+function TLocaisController.Id: integer;
+begin
+  Result := FModel.Id;
+end;
+
 
 end.
 

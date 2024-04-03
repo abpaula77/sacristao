@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, Model.Entity.Interfaces, dao.entity.interfaces, Dao.Locais,
+  Forms, Model.Entity.Interfaces, dao.entity.interfaces, zcomponent, Dao.Locais,
   Controller.Entity.Interfaces, Controller.Entity.Locais, View.Pages.Principal,
   JsonNode in 'lib\json\jsontools.pas';
 

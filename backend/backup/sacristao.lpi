@@ -26,6 +26,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
         <PackageName Value="SQLDBLaz"/>
       </Item>
       <Item>
@@ -83,6 +86,11 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="View.Pages.Principal"/>
       </Unit>
+      <Unit>
+        <Filename Value="lib\json\jsontools.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="JsonTools"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -93,7 +101,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="model\Conexoes;model;model\Entity;model\Entity\cadastros;dao;dao\cadastros;controller\Entity;controller\Entity\cadastros;view\pages;..\..\Bancos\PostgreSql\13\bin;lib\json"/>
+      <OtherUnitFiles Value="model\Conexoes;model;model\Entity;model\Entity\cadastros;dao;dao\cadastros;controller\Entity;controller\Entity\cadastros;view\pages;..\..\Bancos\PostgreSql\13\bin;lib\json;..\..\Componentes\DataSet-Serialize\src"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

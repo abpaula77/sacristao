@@ -8,7 +8,6 @@ object Form1: TForm1
   ClientWidth = 1040
   OnCreate = FormCreate
   OnShow = FormShow
-  LCLVersion = '2.2.2.0'
   object pnlTop: TPanel
     Left = 0
     Height = 88
@@ -57,9 +56,9 @@ object Form1: TForm1
     Height = 571
     Top = 88
     Width = 1040
-    ActivePage = TSCadastro
+    ActivePage = TSLista
     Align = alClient
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 1
     object TSLista: TTabSheet
       Caption = 'Lista'
@@ -231,5 +230,20 @@ object Form1: TForm1
       4E7355FC75AFF2EE483E49EBF7A77DB1E56ADDD398EAD8FDFFA5DBE9742E1624
       8A5014FC97E4FF8EBF0092DDF9FB
     }
+  end
+  object ZQuery1: TZQuery
+    Params = <>
+    Left = 648
+    Top = 12
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=ON'
+    )
+    Port = 0
+    Left = 803
+    Top = 30
   end
 end
