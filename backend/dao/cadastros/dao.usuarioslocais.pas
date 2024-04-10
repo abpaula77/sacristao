@@ -25,6 +25,7 @@ type
        function UsuariosLocais(aId : integer;aModel : iUsuariosLocaisModel) : iUsuariosLocaisDao; overload;
        function Delete(aId : integer): boolean;
        function Save(aModel : iUsuariosLocaisModel): boolean;
+       function ValidarUsuariosLocais(aUsuario: integer; aLocal: integer): boolean;
   end;
 
 implementation
@@ -213,6 +214,30 @@ begin
      FreeAndNil(lQry);
    end;
 
+end;
+
+function TUsuariosLocaisDao.ValidarUsuariosLocais(aUsuario: integer;
+  aLocal: integer): boolean;
+begin
+   FQry.Close;
+   FQry.SQL.Clear;
+   FQry.SQL.Add('SELECT ');
+   FQry.SQL.Add(' a.id ');
+   FQry.SQL.Add('FROM public.usuarios_locais a');
+   FQry.SQL.Add('WHERE a.usuario_id = :usuario_id');
+   FQry.SQL.Add('AND a.local_id = :local_id');
+   FQry.ParamByName('usuario_id').AsInteger := aUsuario;
+   FQry.ParamByName('local_id').AsInteger := aLocal;
+   try
+      FQry.Open;
+      if FQry.IsEmpty then
+         Result := False
+      else
+         Result := True;
+   except
+     on E: exception do
+        Raise Exception.Create(E.Message);
+   end;
 end;
 
 end.

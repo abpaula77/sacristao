@@ -48,6 +48,7 @@ type
      function UsuariosFuncoes(aId : integer;aModel : iUsuariosFuncoesModel) : iUsuariosFuncoesDao; overload;
      function Delete(aId : integer): boolean;
      function Save(aModel : iUsuariosFuncoesModel): boolean;
+     function ValidarUsuariosFuncoes(aUsuario: integer; aFuncao: integer): boolean;
   end;
 
   iUsuariosLocaisDao = interface
@@ -56,6 +57,7 @@ type
      function UsuariosLocais(aId : integer;aModel : iUsuariosLocaisModel) : iUsuariosLocaisDao; overload;
      function Delete(aId : integer): boolean;
      function Save(aModel : iUsuariosLocaisModel): boolean;
+     function ValidarUsuariosLocais(aUsuario: integer; aLocal: integer): boolean;
   end;
 implementation
 

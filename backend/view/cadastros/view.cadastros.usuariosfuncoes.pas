@@ -77,14 +77,17 @@ begin
                 if dtsUsuarios.DataSet.RecordCount <= 0 then
                   Res.Send('Usuário inexistente.').Status(THTTPStatus.ExpectationFailed)
                 else
-                   if FCtrl.Save then
-                      Begin
-                         FCtrl.UsuariosFuncoes(FCtrl.Id);
-                         LBody := dtsLista.DataSet.ToJSONObject();
-                         Res.Send<TJSONObject>(LBody).Status(THTTPStatus.OK);
-                      end
-                   else
-                      Res.Send('Cadastro não realizado.').Status(THTTPStatus.ExpectationFailed);
+                  if not FCtrl.ValidarUsuariosFuncoes(MemTable.FieldByName('usuarioid').AsInteger,MemTable.FieldByName('funcaoid').AsInteger) then
+                     if FCtrl.Save then
+                        Begin
+                           FCtrl.UsuariosFuncoes(FCtrl.Id);
+                           LBody := dtsLista.DataSet.ToJSONObject();
+                           Res.Send<TJSONObject>(LBody).Status(THTTPStatus.OK);
+                        end
+                     else
+                        Res.Send('Cadastro não realizado.').Status(THTTPStatus.ExpectationFailed)
+                  else
+                    Res.Send('Registro já cadastrado.').Status(THTTPStatus.ExpectationFailed);
            end
        else
           Res.Send('Usuário inexistente.').Status(THTTPStatus.ExpectationFailed)

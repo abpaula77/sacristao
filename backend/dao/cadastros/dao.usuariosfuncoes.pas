@@ -25,6 +25,7 @@ type
        function UsuariosFuncoes(aId : integer;aModel : iUsuariosFuncoesModel) : iUsuariosFuncoesDao; overload;
        function Delete(aId : integer): boolean;
        function Save(aModel : iUsuariosFuncoesModel): boolean;
+       function ValidarUsuariosFuncoes(aUsuario: integer; aFuncao: integer): boolean;
   end;
 
 implementation
@@ -213,6 +214,30 @@ begin
      FreeAndNil(lQry);
    end;
 
+end;
+
+function TUsuariosFuncoesDao.ValidarUsuariosFuncoes(aUsuario: integer;
+  aFuncao: integer): boolean;
+begin
+   FQry.Close;
+   FQry.SQL.Clear;
+   FQry.SQL.Add('SELECT ');
+   FQry.SQL.Add(' a.id ');
+   FQry.SQL.Add('FROM public.usuarios_funcoes a');
+   FQry.SQL.Add('WHERE a.usuario_id = :usuario_id');
+   FQry.SQL.Add('AND a.funcao_id = :funcao_id');
+   FQry.ParamByName('usuario_id').AsInteger := aUsuario;
+   FQry.ParamByName('funcao_id').AsInteger := aFuncao;
+   try
+      FQry.Open;
+      if FQry.IsEmpty then
+         Result := False
+      else
+         Result := True;
+   except
+     on E: exception do
+        Raise Exception.Create(E.Message);
+   end;
 end;
 
 end.

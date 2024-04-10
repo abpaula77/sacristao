@@ -26,6 +26,7 @@ type
     function Delete: Boolean;
     function Save: Boolean;
     function Id: integer;
+    function ValidarUsuariosLocais(aUsuario: integer; aLocal: integer): boolean;
   end;
 
 implementation
@@ -92,6 +93,12 @@ end;
 function TUsuariosLocaisController.Id: integer;
 begin
   Result := FModel.Id;
+end;
+
+function TUsuariosLocaisController.ValidarUsuariosLocais(aUsuario: integer;
+  aLocal: integer): boolean;
+begin
+  Result := FDao.ValidarUsuariosLocais(aUsuario,aLocal);
 end;
 
 

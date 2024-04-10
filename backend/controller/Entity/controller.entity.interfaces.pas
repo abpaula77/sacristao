@@ -55,6 +55,7 @@ type
     function Delete: Boolean;
     function Save: Boolean;
     function Id: integer;
+    function ValidarUsuariosFuncoes(aUsuario: integer; aFuncao: integer): boolean;
   end;
 
   iUsuariosLocaisController = interface
@@ -64,6 +65,7 @@ type
     function Delete: Boolean;
     function Save: Boolean;
     function Id: integer;
+    function ValidarUsuariosLocais(aUsuario: integer; aLocal: integer): boolean;
   end;
 implementation
 

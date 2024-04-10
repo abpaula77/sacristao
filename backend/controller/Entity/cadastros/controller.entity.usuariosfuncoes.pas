@@ -26,6 +26,7 @@ type
     function Delete: Boolean;
     function Save: Boolean;
     function Id: integer;
+    function ValidarUsuariosFuncoes(aUsuario: integer; aFuncao: integer): boolean;
   end;
 
 implementation
@@ -92,6 +93,12 @@ end;
 function TUsuariosFuncoesController.Id: integer;
 begin
   Result := FModel.Id;
+end;
+
+function TUsuariosFuncoesController.ValidarUsuariosFuncoes(aUsuario: integer;
+  aFuncao: integer): boolean;
+begin
+  Result := FDao.ValidarUsuariosFuncoes(aUsuario,aFuncao);
 end;
 
 
