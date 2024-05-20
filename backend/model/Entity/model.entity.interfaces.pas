@@ -6,6 +6,7 @@ interface
 
 uses
   Classes, SysUtils;
+  
 type
   iLocaisModel = interface
      ['{77792BE4-2D00-4EC3-B047-60807A432281}']
