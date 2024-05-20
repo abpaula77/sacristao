@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, DB, PQConnection, Forms, Controls, Graphics, Dialogs,
   StdCtrls, ExtCtrls, ComCtrls, DBGrids, ActnList, Buttons,
-  Controller.Entity.Interfaces, Controller.Entity.Locais;
+  Controller.Entity.Interfaces, ZDataset, ZConnection, Controller.Entity.Locais;
 
 type
   TOperacao = (toNone, toInsert, toUpdate, toView);
@@ -42,6 +42,8 @@ type
     SpeedButton2: TSpeedButton;
     TSCadastro: TTabSheet;
     TSLista: TTabSheet;
+    ZConnection1: TZConnection;
+    ZQuery1: TZQuery;
     procedure acCancelExecute(Sender: TObject);
     procedure acCloseExecute(Sender: TObject);
     procedure acDeleteExecute(Sender: TObject);

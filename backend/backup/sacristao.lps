@@ -8,75 +8,73 @@
       <Unit>
         <Filename Value="sacristao.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="7"/>
-        <CursorPos X="103" Y="10"/>
-        <UsageCount Value="125"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="38" Y="15"/>
+        <UsageCount Value="197"/>
       </Unit>
       <Unit>
         <Filename Value="model\Conexoes\model.conexoes.conexaopostgresql.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Model.Conexoes.ConexaoPostgreSQL"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="21"/>
-        <CursorPos Y="46"/>
-        <UsageCount Value="125"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="43"/>
+        <CursorPos X="14" Y="60"/>
+        <UsageCount Value="197"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="model\Entity\model.entity.interfaces.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Model.Entity.Interfaces"/>
-        <EditorIndex Value="1"/>
-        <CursorPos X="15" Y="10"/>
-        <UsageCount Value="125"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="37" Y="12"/>
+        <UsageCount Value="197"/>
       </Unit>
       <Unit>
         <Filename Value="model\Entity\cadastros\model.entity.locais.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Model.Entity.Locais"/>
-        <EditorIndex Value="6"/>
-        <CursorPos X="25"/>
-        <UsageCount Value="125"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="53"/>
+        <CursorPos X="92" Y="52"/>
+        <UsageCount Value="197"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="dao\dao.entity.interfaces.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Dao.Entity.Interfaces"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="71" Y="14"/>
-        <UsageCount Value="124"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="196"/>
       </Unit>
       <Unit>
         <Filename Value="dao\cadastros\dao.locais.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Dao.Locais"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="93"/>
+        <TopLine Value="94"/>
         <CursorPos Y="109"/>
-        <UsageCount Value="124"/>
+        <UsageCount Value="196"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="controller\Entity\controller.entity.interfaces.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Controller.Entity.Interfaces"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <CursorPos Y="14"/>
-        <UsageCount Value="117"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="189"/>
       </Unit>
       <Unit>
         <Filename Value="controller\Entity\cadastros\controller.entity.locais.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Controller.Entity.Locais"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="42"/>
-        <CursorPos X="13" Y="72"/>
-        <UsageCount Value="87"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="15"/>
+        <CursorPos Y="34"/>
+        <UsageCount Value="159"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -86,134 +84,66 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="View.Pages.Principal"/>
-        <EditorIndex Value="8"/>
-        <TopLine Value="77"/>
-        <CursorPos X="3" Y="104"/>
-        <UsageCount Value="27"/>
+        <TopLine Value="98"/>
+        <CursorPos X="14" Y="110"/>
+        <UsageCount Value="99"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="lib\json\jsontools.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="JsonTools"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="789"/>
+        <CursorPos Y="806"/>
+        <UsageCount Value="81"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\fpc\3.2.2\source\packages\fcl-base\src\custapp.pp"/>
+        <UnitName Value="CustApp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="146"/>
+        <CursorPos X="39" Y="120"/>
+        <UsageCount Value="3"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus_32\config_lazarus\onlinepackagemanager\packages\zeosdbo\src\component\ZDataset.pas"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="40"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="6">
       <Position>
         <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="79" Column="31" TopLine="50"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="81" Column="31" TopLine="52"/>
+        <Caret Line="104" Column="3" TopLine="4"/>
       </Position>
       <Position>
         <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="86" Column="3" TopLine="52"/>
+        <Caret Line="10" Column="57"/>
+      </Position>
+      <Position>
+        <Filename Value="model\Conexoes\model.conexoes.conexaopostgresql.pas"/>
+        <Caret Line="62" Column="45"/>
       </Position>
       <Position>
         <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="87" Column="3" TopLine="53"/>
+        <Caret Line="10" Column="55"/>
+      </Position>
+      <Position>
+        <Filename Value="model\Conexoes\model.conexoes.conexaopostgresql.pas"/>
+        <Caret Line="8" Column="43"/>
       </Position>
       <Position>
         <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="86" Column="3" TopLine="52"/>
+        <Caret Line="10" Column="55"/>
       </Position>
       <Position>
         <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="50" Column="21" TopLine="38"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="100" Column="10" TopLine="67"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="110" Column="10" TopLine="80"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="70" Column="6" TopLine="51"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="98" Column="54" TopLine="80"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="100" Column="63" TopLine="81"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="113" Column="34" TopLine="82"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="124" Column="24" TopLine="94"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="136" Column="22" TopLine="102"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="115" Column="5" TopLine="103"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="58" Column="20" TopLine="44"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="111" Column="18" TopLine="108"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="57" Column="26" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="91" Column="29" TopLine="74"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="92" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="57" Column="30" TopLine="41"/>
-      </Position>
-      <Position>
-        <Filename Value="dao\cadastros\dao.locais.pas"/>
-        <Caret Line="25" Column="73"/>
-      </Position>
-      <Position>
-        <Filename Value="controller\Entity\controller.entity.interfaces.pas"/>
-        <Caret Line="14"/>
-      </Position>
-      <Position>
-        <Filename Value="dao\dao.entity.interfaces.pas"/>
-        <Caret Line="14" Column="71"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="79" Column="145" TopLine="76"/>
-      </Position>
-      <Position>
-        <Filename Value="sacristao.lpr"/>
-        <Caret Line="10" Column="103"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="98" Column="17" TopLine="76"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="91" Column="144" TopLine="78"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="105" Column="3" TopLine="78"/>
-      </Position>
-      <Position>
-        <Filename Value="view\pages\view.pages.principal.pas"/>
-        <Caret Line="104" Column="3" TopLine="77"/>
+        <Caret Line="110" Column="14" TopLine="98"/>
       </Position>
     </JumpHistory>
     <RunParams>
@@ -221,11 +151,9 @@
       <Modes ActiveMode=""/>
     </RunParams>
     <HistoryLists>
-      <List Name="WorkingDirectory" Type="File" Count="1"/>
       <List Name="LaunchingApplication" Type="File" Count="1">
         <Item1 Value="C:\Windows\system32\cmd.exe /C ${TargetCmdLine}"/>
       </List>
-      <List Name="CommandLineParameters" Count="1"/>
     </HistoryLists>
   </ProjectSession>
   <Debugging>
@@ -235,7 +163,7 @@
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
         <Source Value="model\Conexoes\model.conexoes.conexaopostgresql.pas"/>
-        <Line Value="46"/>
+        <Line Value="54"/>
       </Item>
     </BreakPoints>
   </Debugging>
