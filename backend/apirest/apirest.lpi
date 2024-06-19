@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="My Application"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="apirest.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\view\cadastros\view.cadastros.funcoes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="View.Cadastros.Funcoes"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\view\utils\view.utils.login.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="View.Utils.Login"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\Entity\cadastros\controller.entity.usuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Controller.Entity.Usuarios"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\dao\cadastros\dao.usuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Dao.Usuarios"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\model\Entity\cadastros\model.entity.locais.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Model.Entity.Locais"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="View.Cadastros.Usuarios"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="apirest"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..\..\..\Componentes\HashLoad\Horse\Horse\src;..\..\..\Componentes\HashLoad\Horse\Jhonson\src;..\controller\Entity;..\..\..\Componentes\DataSet-Serialize\src;..\controller\Entity\cadastros;..\model\Entity;..\model\Entity\cadastros;..\dao;..\dao\cadastros;..\model\Conexoes;..\..\..\Bancos\PostgreSql\13\bin;..\..\..\Componentes\HashLoad\Horse\Horse-Basic-Auth\src;..\..\..\Componentes\HashLoad\Horse\Horse-Compression\src;..\..\..\Componentes\HashLoad\Horse\Handle-Exception\src;..\..\..\Componentes\HashLoad\Horse\Horse-Octet-Stream\src;..\..\..\Componentes\HashLoad\Horse\Horse-Logger\src;..\..\..\Componentes\HashLoad\Horse\Horse-Utils-Clientip\src;..\..\..\Componentes\HashLoad\Horse\Horse-Logger-Provider-Logfile\src;..\..\..\Componentes\HashLoad\Horse\Horse-Paginate\src;..\..\..\Componentes\HashLoad\Horse\Horse-ETag\src;..\..\..\Componentes\HashLoad\Horse\Horse-Jwt\src;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Base;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Checksum;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Crypto;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Hash128;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Hash32;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Hash64;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Include;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Interfaces;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\KDF;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\NullDigest;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Nullable;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Packages;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Utils;..\view\cadastros;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Interfaces\IBlake2BParams;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Crypto\Blake2BParams;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Interfaces\IBlake2SParams;..\..\..\Componentes\HashLoad\Horse\HashLib4Pascal\HashLib\src\Crypto\Blake2SParams;..\view\utils;..\..\..\Componentes\HashLoad\Horse\LazJWT\src"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2"/>
+      </Debugging>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

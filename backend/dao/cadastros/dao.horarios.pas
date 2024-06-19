@@ -195,7 +195,7 @@ begin
       lExist:= Exist(aModel.Id);
       if not lExist then
          Begin
-            lQry.SQL.Add('INSERT INTO piauniao.public.horarios');
+            lQry.SQL.Add('INSERT INTO sacristao.public.horarios');
             lQry.SQL.Add('(local_id,descricao,hora_inicio,segunda,terca,quarta,quinta,sexta,sabado,domingo)');
             lQry.SQL.Add('VALUES');
             lQry.SQL.Add('(:local_id,:descricao,:hora_inicio,:segunda,:terca,:quarta,:quinta,:sexta,:sabado,:domingo)');

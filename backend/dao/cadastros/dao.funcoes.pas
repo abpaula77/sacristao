@@ -177,7 +177,7 @@ begin
       lExist:= Exist(aModel.Id);
       if not lExist then
          Begin
-            lQry.SQL.Add('INSERT INTO piauniao.public.funcoes');
+            lQry.SQL.Add('INSERT INTO sacristao.public.funcoes');
             lQry.SQL.Add('(descricao)');
             lQry.SQL.Add('VALUES');
             lQry.SQL.Add('(:descricao)');

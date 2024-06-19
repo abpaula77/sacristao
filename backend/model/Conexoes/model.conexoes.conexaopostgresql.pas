@@ -57,12 +57,12 @@ begin
    if FileExists(Caminho) then
       Begin
         Conteudo := LoadJSON(Caminho);
-        if Conteudo.FindPath('piauniao') <> nil then
+        if Conteudo.FindPath('sacristao') <> nil then
            Begin
-              FDatabase := Conteudo.FindPath('piauniao').FindPath('database').AsString;
-              FUserName := Conteudo.FindPath('piauniao').FindPath('username').AsString;
-              FPassword := Conteudo.FindPath('piauniao').FindPath('password').AsString;
-              FServer := Conteudo.FindPath('piauniao').FindPath('hostname').AsString;
+              FDatabase := Conteudo.FindPath('sacristao').FindPath('database').AsString;
+              FUserName := Conteudo.FindPath('sacristao').FindPath('username').AsString;
+              FPassword := Conteudo.FindPath('sacristao').FindPath('password').AsString;
+              FServer := Conteudo.FindPath('sacristao').FindPath('hostname').AsString;
            end;
       end
    else

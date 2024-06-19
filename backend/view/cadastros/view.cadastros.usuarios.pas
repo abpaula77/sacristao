@@ -49,13 +49,14 @@ var
   LBody,
   LResposta: TJSONObject;
   MemTable : TMemDataset;
+  Teste : String;
 begin
   dtsLista := TDataSource.Create(nil);
   MemTable := TMemDataset.Create(nil);
-  LBody := Req.Body<TJSONObject>;
+  LBody := TJSONObject.Create;
   LResposta := TJSONObject.Create;
-
-  MemTable.LoadFromJSON(LBody);
+  LBody := Req.Body<TJSONObject>;
+  MemTable.LoadFromJSON(LBody,False);
   dtsLista.DataSet := MemTable;
   try
      FCtrl:= TUsuariosController.New(dtsLista);
@@ -76,8 +77,6 @@ begin
        Res.Send('Username inválido ou já cadastrado.').Status(THTTPStatus.ExpectationFailed);
   finally
   end;
-  dtsLista.Free;
-  MemTable.Free;
 end;
 
 procedure DelUsuarios(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
@@ -94,7 +93,7 @@ begin
   SBody := Req.Body;
   LBody := GetJSON(SBody) as TJSONObject;
   writeln(LBody.AsJSON);
-  MemTable.LoadFromJSON(LBody);
+  MemTable.LoadFromJSON(LBody,False);
   dtsLista.DataSet := MemTable;
   try
      FCtrl:= TUsuariosController.New(dtsLista);

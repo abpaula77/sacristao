@@ -53,7 +53,7 @@ begin
   MemTable := TMemDataset.Create(nil);
   LBody := Req.Body<TJSONObject>;
 
-  MemTable.LoadFromJSON(LBody);
+  MemTable.LoadFromJSON(LBody,False);
   dtsLista.DataSet := MemTable;
   try
      FCtrl:= TLocaisController.New(dtsLista);
@@ -85,7 +85,7 @@ begin
   SBody := Req.Body;
   LBody := GetJSON(SBody) as TJSONObject;
   writeln(LBody.AsJSON);
-  MemTable.LoadFromJSON(LBody);
+  MemTable.LoadFromJSON(LBody,False);
   dtsLista.DataSet := MemTable;
   try
      FCtrl:= TLocaisController.New(dtsLista);

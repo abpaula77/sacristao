@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="apirest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="111"/>
+        <CursorPos X="6" Y="123"/>
+        <UsageCount Value="211"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\view\cadastros\view.cadastros.funcoes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="View.Cadastros.Funcoes"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="40"/>
+        <CursorPos X="24" Y="56"/>
+        <UsageCount Value="249"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\view\utils\view.utils.login.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="View.Utils.Login"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="70" Y="10"/>
+        <UsageCount Value="200"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\Entity\cadastros\controller.entity.usuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Controller.Entity.Usuarios"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="107"/>
+        <CursorPos Y="113"/>
+        <UsageCount Value="584"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\dao\cadastros\dao.usuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Dao.Usuarios"/>
+        <EditorIndex Value="15"/>
+        <TopLine Value="259"/>
+        <CursorPos Y="278"/>
+        <UsageCount Value="584"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\model\Entity\cadastros\model.entity.locais.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Model.Entity.Locais"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="52"/>
+        <CursorPos Y="83"/>
+        <UsageCount Value="570"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="View.Cadastros.Usuarios"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="43"/>
+        <CursorPos X="24" Y="59"/>
+        <UsageCount Value="570"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\Entity\cadastros\controller.entity.locais.pas"/>
+        <UnitName Value="Controller.Entity.Locais"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="6" Y="33"/>
+        <UsageCount Value="26"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\dao\cadastros\dao.funcoes.pas"/>
+        <UnitName Value="Dao.Funcoes"/>
+        <EditorIndex Value="19"/>
+        <TopLine Value="154"/>
+        <CursorPos X="48" Y="180"/>
+        <UsageCount Value="90"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\model\Conexoes\model.conexoes.conexaopostgresql.pas"/>
+        <UnitName Value="Model.Conexoes.ConexaoPostgreSQL"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="40"/>
+        <CursorPos Y="56"/>
+        <UsageCount Value="140"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\dao\dao.entity.interfaces.pas"/>
+        <UnitName Value="Dao.Entity.Interfaces"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="15" Y="51"/>
+        <UsageCount Value="306"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\model\Entity\cadastros\model.entity.usuarios.pas"/>
+        <UnitName Value="Model.Entity.Usuarios"/>
+        <EditorIndex Value="12"/>
+        <CursorPos X="38" Y="68"/>
+        <UsageCount Value="356"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\Entity\controller.entity.interfaces.pas"/>
+        <UnitName Value="Controller.Entity.Interfaces"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="42"/>
+        <CursorPos X="14" Y="30"/>
+        <UsageCount Value="342"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\model\Entity\model.entity.interfaces.pas"/>
+        <UnitName Value="Model.Entity.Interfaces"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="20" Y="89"/>
+        <UsageCount Value="272"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\HashLoad\Horse\Horse-Jwt\src\Horse.JWT.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="314"/>
+        <CursorPos Y="336"/>
+        <UsageCount Value="68"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\Entity\cadastros\controller.entity.funcoes.pas"/>
+        <UnitName Value="Controller.Entity.Funcoes"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="36" Y="60"/>
+        <UsageCount Value="1"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\view\cadastros\view.cadastros.locais.pas"/>
+        <UnitName Value="View.Cadastros.Locais"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="40"/>
+        <CursorPos X="24" Y="56"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\model\Entity\cadastros\model.entity.funcoes.pas"/>
+        <UnitName Value="Model.Entity.Funcoes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="36"/>
+        <CursorPos Y="56"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\view\cadastros\view.cadastros.horarios.pas"/>
+        <UnitName Value="View.Cadastros.Horarios"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="76"/>
+        <CursorPos X="24" Y="102"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\Entity\cadastros\controller.entity.horarios.pas"/>
+        <UnitName Value="Controller.Entity.Horarios"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="64" Y="84"/>
+        <UsageCount Value="1"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\model\Entity\cadastros\model.entity.horarios.pas"/>
+        <UnitName Value="Model.Entity.Horarios"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14"/>
+        <CursorPos Y="55"/>
+        <UsageCount Value="1"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\dao\cadastros\dao.horarios.pas"/>
+        <UnitName Value="Dao.Horarios"/>
+        <EditorIndex Value="20"/>
+        <TopLine Value="157"/>
+        <CursorPos X="48" Y="198"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\view\cadastros\view.cadastros.usuariosfuncoes.pas"/>
+        <UnitName Value="View.Cadastros.UsuariosFuncoes"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="48"/>
+        <CursorPos X="24" Y="63"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\controller\Entity\cadastros\controller.entity.usuariosfuncoes.pas"/>
+        <UnitName Value="Controller.Entity.UsuariosFuncoes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="12"/>
+        <CursorPos X="57" Y="101"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\dao\cadastros\dao.usuariosfuncoes.pas"/>
+        <UnitName Value="Dao.UsuariosFuncoes"/>
+        <EditorIndex Value="17"/>
+        <TopLine Value="157"/>
+        <CursorPos X="48" Y="183"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus_32\lazarus\components\lazutils\fpcadds.pas"/>
+        <UnitName Value="FPCAdds"/>
+        <EditorIndex Value="14"/>
+        <CursorPos X="15" Y="9"/>
+        <UsageCount Value="65"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\dao\cadastros\dao.locais.pas"/>
+        <UnitName Value="Dao.Locais"/>
+        <EditorIndex Value="16"/>
+        <TopLine Value="156"/>
+        <CursorPos X="48" Y="182"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\dao\cadastros\dao.usuarioslocais.pas"/>
+        <UnitName Value="Dao.UsuariosLocais"/>
+        <EditorIndex Value="18"/>
+        <TopLine Value="157"/>
+        <CursorPos X="48" Y="183"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus_32\lazarus\fpc\3.2.2\source\packages\rtl-generics\src\generics.collections.pas"/>
+        <UnitName Value="Generics.Collections"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1626"/>
+        <CursorPos Y="1641"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\HashLoad\Horse\Horse-Logger-Provider-Logfile\src\Horse.Logger.Provider.LogFile.pas"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="86"/>
+        <CursorPos Y="102"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\HashLoad\Horse\Horse\src\Horse.Core.RouterTree.NextCaller.pas"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="81"/>
+        <CursorPos Y="98"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\HashLoad\Horse\Horse\src\Horse.Core.RouterTree.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="72"/>
+        <CursorPos Y="88"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\HashLoad\Horse\Horse-Logger\src\Horse.Logger.Manager.pas"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="123"/>
+        <CursorPos Y="139"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\HashLoad\Horse\Horse\src\Horse.WebModule.pas"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\HashLoad\Horse\Horse\src\Horse.WebModule.lfm"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="9"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarioslocais.pas"/>
+        <UnitName Value="View.Cadastros.UsuariosLocais"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="48"/>
+        <CursorPos X="24" Y="63"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="82" Column="3" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="58" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="59" TopLine="47"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="58" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="80" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="56" Column="5" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="80" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="54" Column="3" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="76" Column="98" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="59" Column="36" TopLine="84"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="59" Column="24" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarios.pas"/>
+        <Caret Line="96" Column="36" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.funcoes.pas"/>
+        <Caret Line="64" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.funcoes.pas"/>
+        <Caret Line="87" Column="36" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.funcoes.pas"/>
+        <Caret Line="56" Column="36" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.funcoes.pas"/>
+        <Caret Line="87" Column="24" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.horarios.pas"/>
+        <Caret Line="71" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.horarios.pas"/>
+        <Caret Line="102" Column="36" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.horarios.pas"/>
+        <Caret Line="61" Column="36" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.locais.pas"/>
+        <Caret Line="50" Column="31" TopLine="64"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.locais.pas"/>
+        <Caret Line="56" Column="36" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.locais.pas"/>
+        <Caret Line="88" Column="36" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuariosfuncoes.pas"/>
+        <Caret Line="80" Column="129"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuariosfuncoes.pas"/>
+        <Caret Line="117" Column="36" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuariosfuncoes.pas"/>
+        <Caret Line="63" Column="36" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuariosfuncoes.pas"/>
+        <Caret Line="117" Column="24" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarioslocais.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarioslocais.pas"/>
+        <Caret Line="63" Column="36" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="..\view\cadastros\view.cadastros.usuarioslocais.pas"/>
+        <Caret Line="117" Column="36" TopLine="91"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+    <HistoryLists>
+      <List Name="LaunchingApplication" Type="File" Count="1">
+        <Item1 Value="C:\Windows\system32\cmd.exe /C ${TargetCmdLine}"/>
+      </List>
+      <List Name="WorkingDirectory" Type="File" Count="1"/>
+      <List Name="CommandLineParameters" Count="1"/>
+    </HistoryLists>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\view\cadastros\view.cadastros.funcoes.pas"/>
+        <Line Value="52"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\view\cadastros\view.cadastros.usuarioslocais.pas"/>
+        <Line Value="38"/>
+      </Item>
+    </BreakPoints>
+    <Watches>
+      <Item>
+        <Expression Value="Conteudo.FindPath(&apos;piauniao&apos;)"/>
+      </Item>
+      <Item>
+        <Expression Value="Req.Body"/>
+      </Item>
+      <Item>
+        <Expression Value="FDataSource.DataSet.RecordCount"/>
+      </Item>
+      <Item>
+        <Expression Value="value"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

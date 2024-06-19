@@ -179,7 +179,7 @@ begin
       lExist:= Exist(aModel.Id);
       if not lExist then
          Begin
-            lQry.SQL.Add('INSERT INTO piauniao.public.locais');
+            lQry.SQL.Add('INSERT INTO sacristao.public.locais');
             lQry.SQL.Add('(descricao,endereco)');
             lQry.SQL.Add('VALUES');
             lQry.SQL.Add('(:descricao,:endereco)');
